@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     parameters {
-        string(name: 'NAME', defaultValue: 'World')
+        string(name: 'NAME', defaultValue: 'Moria')
     }
 
     stages {
