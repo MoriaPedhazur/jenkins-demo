@@ -109,7 +109,7 @@ docker volume create jenkins_agent1
 # Step 4: Run the inbound Linux agent container
 docker run -d --name jenkins-agent-1 --restart unless-stopped --network jenkins-net ^
   -e "JENKINS_URL=http://jenkins:8080/" -e "JENKINS_AGENT_NAME=linux-docker-1" ^
-  -e "JENKINS_SECRET=<redacted>" -e "JENKINS_AGENT_WORKDIR=/home/jenkins/agent" ^
+  -e "JENKINS_SECRET=<***>" -e "JENKINS_AGENT_WORKDIR=/home/jenkins/agent" ^
   -v jenkins_agent1:/home/jenkins/agent jenkins/inbound-agent:latest
 ```
 
